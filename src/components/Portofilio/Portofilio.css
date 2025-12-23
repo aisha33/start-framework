@@ -1,0 +1,48 @@
+.portfolio-item {
+  cursor: pointer;
+}
+
+.portfolio-item .overlay {
+  position: absolute;
+  inset: 0;
+  background-color:rgba(255, 228, 196, 0.605);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.portfolio-item:hover .overlay {
+  opacity: 1;
+}
+/* Modal */
+.custom-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content-custom {
+  position: relative;
+  max-width: 600px;
+}
+
+.modal-content-custom img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.btn-close-custom {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: bisque;
+  color: rgb(10, 10, 10);
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
